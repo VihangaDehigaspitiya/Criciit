@@ -1,0 +1,15 @@
+body {
+    background-image: url("noise.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+h1{
+    color: darkblue;
+}
+
+h2{
+    color: royalblue;
+}
+
+

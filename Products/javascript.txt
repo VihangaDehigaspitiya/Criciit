@@ -1,0 +1,38 @@
+var min=8;//Here i've set the minimum and maximum value of the text size 
+var max=18;
+
+//This is to increase the font size 
+function increaseFontSize() {
+   var par = document.getElementsByTagName("p");
+
+   // "par" is the paragraph tag of the HTML document
+   for(i=0;i<p.length;i++) {
+      if(p[i].style.fontSize) {
+         var s = parseInt(p[i].style.fontSize.replace("px",""));
+      } else {
+         var s = 12;
+      }
+      if(s!=max) {
+         s += 1;
+      }
+      p[i].style.fontSize = s+"px"
+   }
+}
+//This is to decrease the font size 
+function decreaseFontSize() {
+   var p = document.getElementsByTagName("p");
+
+   //here also "par" is the paragraph tag of HTML document
+
+   for(i=0;i<p.length;i++) {
+      if(p[i].style.fontSize) {
+         var s = parseInt(p[i].style.fontSize.replace("px",""));
+      } else {
+         var s = 12;
+      }
+      if(s!=min) {
+         s -= 1;
+      }
+      p[i].style.fontSize = s+"px"
+   }   
+}

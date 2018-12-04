@@ -1,0 +1,119 @@
+<html>
+    
+    <head>
+        
+        <link rel="stylesheet" type="text/css" href="star-rating-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="form-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="../nav-bar-stylesheet.css">
+        <script src="form-javascript.js"></script>
+        <script type="text/Javascript" src="../javascript.js"></script>
+           
+        
+        <style>
+        
+            body { 
+                background: #8E0E00;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			}
+        </style>
+        <script>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    </head>
+    
+    <body>
+        <a href="javascript:decreaseFontSize();">-</a> 
+    <a href="javascript:increaseFontSize();">+</a>
+
+        
+        <div class="banner">
+            
+            <div class="logo">
+                <img src="../logo.png" alt="Logo">
+            </div>
+            
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../aboutus.html">About</a></li>
+                    <li class="dropdown"> <a href="../Products/personalDetailsForm.html" class="dropbtn">Store</a></li>
+                    <li><a href="../Gallery/Eight.html">Gallery</a></li>
+                    <li><a href="../Sitemap/sitemap.html">SITE MAP</a></li>
+                    <li><a href="../WDD_CW_FINAL/cricketQuiz.html">Quiz</a></li>
+                    <li><a class="active" href="form.html">Comments</a></li>
+                </ul>
+            </div> 
+                
+        </div>
+        
+        
+        
+        <div class="form">
+            <div class="container">
+            
+            <form method="post"  name="f1">
+                
+                <h2>Comments and Feedback</h2><br>
+                <div class="row">
+  <div class="label"><label>First Name</label></div><div class="cont"><input type="text" placeholder="First Name" size="25" name="fname" autofocus></div>
+</div>
+                <div class="row">
+                <div class="label"><label>Last Name</label></div><div class="cont"><input placeholder="Last Name" type="text" size="25" name="lname"></div>
+                </div>
+                <div class="row">
+                <div class="label"><label>E-mail</label></div><div class="cont"><input placeholder="example@mail.com" type="email" size="25" name="email"></div>
+                </div>
+                <div class="row">
+                <div class="label"><label>Any Comments</label></div><div class="cont"><textarea name="Commments" rows="4" cols="50"></textarea></div>
+                </div>
+                <br>
+    
+    <span class="star-rating">
+Very Bad &nbsp;
+ Bad &nbsp;
+  Average &nbsp;
+  Good &nbsp;
+ Excellent &nbsp;
+</span>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">⬆</button>
+    <div class="row">
+       <div class="labelradio">
+           <span>
+  &nbsp;<input type="radio" name="rating" value=" Very Bad">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+  &nbsp; <input type="radio" name="rating" value="Bad"><i></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;  <input type="radio" name="rating" value="Average"><i></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;  <input type="radio" name="rating" value="Good"><i></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;  <input type="radio" name="rating" value="Very good"><i></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+        </div></div> <br>  
+    
+<div id="buttons">
+  <input type="submit" value="Submit" onclick="validation()">
+  <input type="reset" value="Reset">
+        </div>
+        </form>
+    </div>
+    
+        </div>
+        
+        <footer>
+
+    <hr color="black">
+    <hr color="black">
+    <br>
+
+    <!--cpoyrights and link to CV-->
+    <p id="links">
+    <center><a href="../CV/haffycv.html" target="_blank"> Haffaz</a>©<br>All Rights Reserved | TEAM eXpireD</center>
+    </p>
+
+</footer>
+        
+    </body>
+
+</html>

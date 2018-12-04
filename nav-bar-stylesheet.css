@@ -1,0 +1,164 @@
+
+.heading {
+    font-family: Helvetica;
+    font-size: 45px;
+}
+
+#featured_products {
+    height: 400px;
+    width: 100%;
+}
+
+#store {
+    width:70%;
+    margin: auto;
+}
+.store_item {
+    float: left;
+    padding: 10px 50px 
+    
+}
+
+.store_item p {
+    text-align: center;
+}
+.store_item img {
+    width:250px;
+    height:270px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+
+.store_item img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.store_item img:hover {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+
+.Content{
+    background-color:white;
+    margin: auto;
+    opacity:0.8;
+}
+
+.contacts-container {
+    width: 100%;
+    margin: auto;
+    
+}
+.contact-details {
+float: left;
+    color: azure;
+    
+}
+.contact-social-media {
+    
+    width: 190px;
+   
+}
+
+.heading{
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+
+
+.text{
+          font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+
+}
+body {
+    background: #8E0E00;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+ul {
+    list-style-type: none;
+    width:930px;
+    margin:auto;
+    padding: 0;
+    overflow: hidden;
+    margin-top: auto;
+    position:relative;
+}
+
+.banner {
+    width:75%;
+    margin: auto;
+}
+.logo {
+    width:50%;
+    margin: auto;
+    
+}
+
+.nav{
+    display: flex;
+    background:transparent;
+    width: 100%;
+     
+     top: 0;
+}
+
+.nav li {
+    align-content: center;
+    float: left;
+  
+}
+body{
+    background-color: #212121;
+    background-image: url();
+    background-size:     contain;                    
+    background-repeat:repeat-y;
+    background-position: center center;  
+     overflow: scroll;
+}
+.nav li a, .dropbtn {
+    align-content: center;
+    display: inline-block;
+    color: white;
+    font-weight:600;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    width:100px;
+    font-size: 12px;
+    position: relative;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-top: 2em;
+    
+}
+
+.nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: #1565C0;
+}
+
+.nav li.dropdown {
+    display: inline-block;
+}
+
+
+
+
+.active{
+    background-color:#283593;
+}
+
+.border{
+
+ position:relative;
+ width:100%;
+ height:100px;
+ opacity: 0.5;
+}
+
+.border:hover{
+    opacity: 1.0;
+}

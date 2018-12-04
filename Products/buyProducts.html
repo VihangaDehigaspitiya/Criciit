@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products page</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stylep.css" media="screen" type="text/css" />
+<script type="text/javascript" src="cart.js"></script>
+<link rel="stylesheet" type="text/css" href="../nav-bar-stylesheet.css">
+    
+    
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="image_slider.js"></script>
+    <script type="text/Javascript" src="javascript.js"></script>
+    
+    <style>
+        
+      body { 
+        background: #8E0E00;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	  }
+	  </style>
+    
+</head>
+
+<body >
+<div class="banner">
+            
+            <div class="logo">
+                <img src="../logo.png" alt="Logo">
+            </div>
+            
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown"> <a class="active" href="personalDetailsForm.html" class="dropbtn">Store</a></li>
+                    <li><a href="../Gallery/Eight.html">Gallery</a></li>
+                    <li><a href="../Sitemap/sitemap.html">SITE MAP</a></li>
+                    <li><a href="../WDD_CW_FINAL/cricketQuiz.html">Quiz</a></li>
+                    <li><a href="../Form/form.html">Comments</a></li>
+                </ul>
+            </div> 
+                
+        </div>
+  
+
+    
+    <h1 align="center">Shopping Cart</h1>
+    
+<form onsubmit="return false;">
+  <table style="margin: 0px auto;" id="priceshowid" >
+        <tr>
+            <td align="top">
+                <table cellpadding="4" cellspacing="4" border="1" id="orderedProductsTable">
+                        <thead id="tableinside">
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price (in LKR)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orderedProductsTableBody">
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr id="tableinside">
+                        <td>Total</td>
+                        <td colspan="3" align="right" id="cart_total"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </td>
+            
+            <td><a class="btn" onClick="history.go(0)">Empty Cart</a></td>
+            
+            <td><button class="btn" onClick="myFunction()">Checkout</button></td>
+            
+      </tr>
+    </table>
+</form>
+    
+    
+   
+   <div class="topclear"></div>
+
+  <div id="content">
+		<div id="products">
+			<ul>
+			    <li><br>
+                    <div class="product-icon">
+						<img src="1.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">KOOKABURRA GHOST 600 BATTING GLOVES</h3>
+                        <p class="product-price"> Rs.4500</p>
+                        <p class="product-details">The Ghost 600 have all the trimmings and trappings of an incredible Kookaburra cricket glove. This includes calf leather durability and of course Max Flo Ventilation to keep the batsman’s hands as dry as possible.</p>
+						
+						<form>
+							<div align="center">
+								<label for="qty-1">Quantity</label>
+								<input type="text" name="qty-1" id="qty-1" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('KOOKABURRA GHOST 600 BATTING GLOVES',document.getElementById('qty-1').value,4500)"/></p>
+						</form>
+					</div>
+				</li><!--1-->
+
+                
+               <li><br>
+					<div class="product-icon">
+						<img src="2.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">GM 808 Batting Gloves</h3>
+                        <p class="product-price"> Rs.6500</p>
+                        <p class="product-details">The GM 808 LE Cricket Gloves are once again a top of the class pair of cricket batting gloves. There is poron XRD technology which is the most impact resistant material in the entire impact sports industry which give these batting gloves their top level protection factor.</p>
+						
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('GM 808 Batting Gloves',document.getElementById('qty-2').value,6500)"  /></p>
+						</form>
+					</div>
+				</li> <!--2-->
+                
+                <li><br>
+					<div class="product-icon">
+						<img src="3.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">Hammer PRO Batting Gloves</h3>
+						<p class="product-price"> Rs.10,000</p>
+                        <p class="product-details">A fantastic pair of batting gloves from the bespoke and boutique cricket brand, Hammer Cricket. These gloves offer incredible protection. Some of the features include the full pittard leather inside of the hand.</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-3">Quantity</label>
+								<input type="text" name="qty-3" id="qty-3" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('Hammer PRO Batting Gloves',document.getElementById('qty-3').value,10000)" /></p>
+						</form>
+					</div>
+				</li> <!--3-->
+            </ul>
+             <div class="clear"></div>
+            <ul>  
+                 <li><br>
+					<div class="product-icon">
+						<img src="13.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">Gray Nicolls Legend 2011</h3>
+						<p class="product-price"> Rs.22,200</p>
+                        <p class="product-details">With a more traditional design, these pads feature excellent safety cushion for areas of high impact. Though you spend a bit extra on these batting pads, you get far more than your money’s worth.</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-13">Quantity</label>
+								<input type="text" name="qty-13" id="qty-13" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('Gray Nicolls Legend 2011',document.getElementById('qty-13').value,22000)"/></p>
+						</form>
+					</div>
+				</li> <!--4-->
+            
+                <li><br>
+					<div class="product-icon">
+						<img src="14.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">Aero P3</h3>
+						<p class="product-price"> Rs.21,000</p>
+                        <p class="product-details">These pads will suit almost any person who has a budget as they offer good value for money. Despite their price, these pads are highly advanced in their design and materials, being considerably lighter than many others available in the market.</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-14">Quantity</label>
+								<input type="text" name="qty-14" id="qty-14" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('Aero P3',document.getElementById('qty-14').value,21000)"/></p>
+						</form>
+					</div>
+				</li> <!--5-->
+                
+                
+                <li><br>
+					<div class="product-icon">
+						<img src="15.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">Aero P5</h3>
+						<p class="product-price"> Rs.11,500</p>
+                        <p class="product-details">These pads will suit almost any person who has a budget as they offer good value for money. Despite their price, these pads are highly advanced in their design and materials, being considerably lighter than many others available in the market.</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-15">Quantity</label>
+								<input type="text" name="qty-15" id="qty-15" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('Aero P5',document.getElementById('qty-15').value,11500)"/></p>
+						</form>
+					</div>
+				</li>   <!--6-->
+                </ul>
+                 <div class="clear"></div>
+                <ul>
+                <li><br>
+					<div class="product-icon">
+						<img src="4.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">Kookaburra Kahuna</h3>
+						<p class="product-price"> Rs.98,650</p>
+                        <p class="product-details">Kookaburra Kahuna deserve the first place among the top 10 best cricket bats list. Kahuna has been the leader of the Kookaburra bats. It’s an exceptional combination of power with light ‘pick up’, straight evenly spaced grains, and a clean hitting area generating maximum impact.</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-4">Quantity</label>
+								<input type="text" name="qty-4" id="qty-4" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('Kookaburra Kahuna',document.getElementById('qty-4').value,98650)"/></p>
+						</form>
+					</div>
+				</li> <!--7-->
+                
+                <li><br>
+					<div class="product-icon">
+						<img src="5.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">Adidas Incurza</h3>
+						<p class="product-price"> Rs.82,500</p>
+                        <p class="product-details">Superbly crafted English willow bat, created to attack with strength, the bat has awesome profile flowing through to increased bow, increased middle, top class pick-up & balance with great edges. 
+                       	</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-5">Quantity</label>
+								<input type="text" name="qty-5" id="qty-5" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('Adidas Incurza',document.getElementById('qty-5').value,82500)"/></p>
+						</form>
+					</div>
+				</li> <!--8-->
+                
+                 <li><br>
+					<div class="product-icon">
+						<img src="6.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name"> Gray-Nicolls Viper</h3>
+						<p class="product-price"> Rs.84,000</p>
+                        <p class="product-details">Gray-Nicolls was the first cricket company to use colored bat labels. From the beginning Gray-Nicolls have manufactured cricket bats to the very highest quality with the use of latest bat technology.</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-6">Quantity</label>
+								<input type="text" name="qty-6" id="qty-6" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('Gray-Nicolls Viper',document.getElementById('qty-6').value,84000)"/></p>
+						</form>
+					</div>
+				</li> <!--9-->
+            </ul>
+             <div class="clear"></div>
+            <ul>
+                <li><br>
+					<div class="product-icon">
+						<img src="7.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">GM Icon</h3>
+						<p class="product-price"> Rs.91,200</p>
+                        <p class="product-details">Gunn & Moore cricket bats are designed and produced from prime English Willow by their best craftsmen. The GM factory is the most technologically advanced in the world and only GM blends state of the art DXM technology with over 125 years of craft experience. </p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-7">Quantity</label>
+								<input type="text" name="qty-7" id="qty-7" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('GM Icon',document.getElementById('qty-7').value,91200)"/></p>
+						</form>
+					</div>
+				</li> <!--10-->
+                
+                <li><br>
+					<div class="product-icon">
+						<img src="8.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">SG Cobra select</h3>
+						<p class="product-price"> Rs.63,200</p>
+                        <p class="product-details">Sanspareils Greenlands is India’s no.1 cricket gear brand and also world’s largest manufacturer of cricket gear. SG cricket gear is special because their R & D team always has a panel of well-known first-class and international cricketers.</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-8">Quantity</label>
+								<input type="text" name="qty-8" id="qty-8" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('SG Cobra select',document.getElementById('qty-8').value,63200)"/></p>
+						</form>
+					</div>
+				</li> <!--11-->
+                
+                <li><br>
+					<div class="product-icon">
+						<img src="9.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name"> Puma Ballistic</h3>
+						<p class="product-price"> Rs.62,000</p>
+                        <p class="product-details">The Puma Ballistic cricket bat is made of using the very best unbleached Grade one English willow. The willow has been specifically picked as per its weight, grain structure and performance.</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-9">Quantity</label>
+								<input type="text" name="qty-9" id="qty-9" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('Puma Ballistic',document.getElementById('qty-9').value,62000)"/></p>
+						</form>
+					</div>
+				</li> <!--12-->
+            </ul>
+             <div class="clear"></div>
+            <ul>   
+                  <li><br>
+					<div class="product-icon">
+						<img src="10.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">Kookaburra Blade 500</h3>
+						<p class="product-price"> Rs.15,500</p>
+                        <p class="product-details">These are an entry level, lightweight pads which give you very good mobility as well as comfort. The pads have specially designed contour knee padding which help keep the pad in place even when running. </p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-10">Quantity</label>
+								<input type="text" name="qty-10" id="qty-10" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('Kookaburra Blade 500',document.getElementById('qty-10').value,1500)"/></p>
+						</form>
+					</div>
+				</li> <!--13-->
+                
+                <li><br>
+					<div class="product-icon">
+						<img src="11.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">Puma Irridium 6000</h3>
+						<p class="product-price"> Rs.22,000</p>
+                        <p class="product-details">These are probably the lightest pads available in the market. As in all Puma accessories, most of the cushioning in these pads is removable, so you can adjust according to you requirements.</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-11">Quantity</label>
+								<input type="text" name="qty-11" id="qty-11" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('Puma Irridium 6000',document.getElementById('qty-11').value,22000)"/></p>
+						</form>
+					</div>
+				</li> <!--14-->
+                
+                <li><br>
+					<div class="product-icon">
+						<img src="12.jpg" style="width:150px;height:150px;" />
+					</div>
+					<div class="product-description">
+						<h3 class="product-name">GM d30</h3>
+						<p class="product-price"> Rs.18,990</p>
+                        <p class="product-details">Known for their high quality, these pads have similar knee padding to the kookaburra range, but the pad itself is more round to fit your knee better. </p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div align="center">
+								<label for="qty-12">Quantity</label>
+								<input type="text" name="qty-12" id="qty-12" class="qty" value="0" />
+							</div>
+							<p align="center"><input type="button" value="Add to cart" class="btn" onclick="AddtoCart('GM d30',document.getElementById('qty-12').value,18990)"/></p>
+						</form>
+					</div>
+				</li> <!--15-->
+            <!--block-->
+            </ul>
+      </div>
+    </div>
+    
+    
+    <footer>
+
+    <hr color="black">
+    <hr color="black">
+    <br>
+
+    <!--cpoyrights and link to CV-->
+    <p id="links">
+    <center><a href="../CV/vimmacv.html" target="_blank">Vimukthi</a>©<br>All Rights Reserved | TEAM eXpireD</center>
+    </p>
+
+</footer>
+    
+ 
+        
+    
+</body>
+</html>

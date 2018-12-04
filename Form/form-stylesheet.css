@@ -1,0 +1,37 @@
+input[type=text], input[type= email], textarea {
+    width: 60%;
+    height: 50px;
+    float:left
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    }
+
+input[type=text]:hover, input[type= email]:hover, textarea:hover {
+    border: 3px solid #ff1a1a;
+    }
+            
+.form {
+    text-align: left;
+    border-style: solid;
+    }
+            
+textarea {
+    width: 60%;
+    height: 30%;
+    margin: auto;
+    }
+.container {
+    width:40%;
+    margin: auto;
+}
+
+label {
+    font-size: 25px;
+    text-emphasis-color: aliceblue;
+}

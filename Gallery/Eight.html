@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thumbnail Page</title>
+        <link rel = "stylesheet" type = "text/css" href = "thumb.css" />
+        <link rel="stylesheet" type="text/css" href="../nav-bar-stylesheet.css">
+        <script src="JS/thumbnailpage.js">
+        </script>
+        
+        <style>
+        
+            body { 
+            background: #8E0E00;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	       }
+        </style>
+    </head>
+    <body>
+        
+        <div class="banner">
+            
+            <div class="logo">
+                <img src="../logo.png" alt="Logo">
+            </div>
+            
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../aboutus.html">About</a></li>
+                    <li > <a href="../Products/personalDetailsForm.html" >Store</a></li>
+                    <li><a class="active" href="Eight.html">Gallery</a></li>
+                    <li><a href="../Sitemap/sitemap.html">SITE MAP</a></li>
+                    <li><a href="../WDD_CW_FINAL/cricketQuiz.html">Quiz</a></li>
+                    <li><a href="../Form/form.html">Comments</a></li>
+                </ul>
+            </div> 
+                
+        </div>
+        <form>
+        <div class="container">
+        <div class="table">
+        <table>
+              <tr>
+                <td></td>
+                <td><img alt="Lara" src="CSS/img/lara.jpg" img class="img-circle" 
+                         style="height: 275px; width: 250px" onclick="change1()" /></td>
+                <td></td>
+                <td><img alt="Kevin" src="CSS/img/kevin.jpg" img class="img-circle" 
+                         style="height: 275px; width: 250px" onclick="change2()" /></td>
+                <td></td>
+                <td><img alt="Sanga" src="CSS/img/sanga.jpg"img class="img-circle" 
+                         style="height: 275px; width: 250px" onclick="change3()" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td> <img alt="Ponting" src="CSS/img/ricky.jpg"img class="img-circle"
+                         style="height: 275px; width: 250px" onclick="change4()" /></td>
+                <td></td>
+                <td><img alt="Siripadaya" src="CSS/img/daniel.jpg"img class="img-circle"
+                         style="height: 275px; width: 250px" onclick="change5()" /></td>
+                <td></td>
+                <td></td>
+              </tr>            
+        </table>
+        </div>
+        </div>
+     
+    <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" id="back">
+    <div class="modal-header">
+        <div class="dropdown">
+            <button class="dropbtn">Background Color</button>
+            <div class="dropdown-content">
+                <a onclick="backblack()">Black</a>
+                <a onclick="backwhite()">White</a>
+                <a onclick="backgreen()">Green</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Text Color</button>
+            <div class="dropdown-content">
+                <a onclick="textred()">Red</a>
+                <a onclick="textblue()">Blue</a>
+                <a onclick="textblack()">Black</a>
+                <a onclick="textwhite()">White</a>
+            </div>
+        </div>
+      
+        <div class="header">
+      <h2 align = "center" id="header"><u>Brian Lara</u></h2>
+    </div>
+        </div>
+      
+      
+      <div class = "main">  
+      <img alt="Brian Lara"  id="mainImg" style="height: 320px; width: 300px" img class="img-circle">
+      </div>
+   <div class="para">
+       <p id="des"></p>
+  
+  </div>
+      </div>
+</div>
+
+            </form>
+    </body>
+</html>
+                  
+            
+                    
+                    
+
+               
+                    
+              
+                    
+                
+                    
+                
+                    
+
+               

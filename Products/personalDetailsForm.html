@@ -1,0 +1,147 @@
+<html>
+    
+    <head>
+    <title>Personal details form</title>
+        
+        <link rel="stylesheet" href="stylep.css" media="screen" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../nav-bar-stylesheet.css">
+    </head>
+    
+    <style>
+        
+        body { 
+            background: #8E0E00;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		}
+    </style>
+        
+
+    <body>
+    
+	 <a href="javascript:decreaseFontSize();">-</a> 
+    <a href="javascript:increaseFontSize();">+</a>
+        <div class="banner">
+            
+            <div class="logo">
+                <img src="../logo.png" alt="Logo">
+            </div>
+            
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../aboutus.html">About</a></li>
+                    <li class="dropdown"> <a class="active" href="personalDetailsForm.html" class="dropbtn">Store</a></li>
+                    <li><a href="../Gallery/Eight.html">Gallery</a></li>
+                    <li><a href="../Sitemap/sitemap.html">SITE MAP</a></li>
+                    <li><a href="../WDD_CW_FINAL/cricketQuiz.html">Quiz</a></li>
+                    <li><a href="../Form/form.html">Comments</a></li>
+                </ul>
+            </div> 
+                
+        </div>
+    
+        <h2 align="center"> Personal Details </h2>
+    
+        <form method="post" name="f1" align="center">
+
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" name="fname"placeholder="eg: Vimukthi" required='true'>
+        <br><br><br>
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" name="lname:"  placeholder="eg: Gunarathna" required='true'>
+        <br><br><br>
+        <label for="telno"> Telephone number: </label>
+        <input type="text" id="telno" name="Telephone:" placeholder="eg: 0773415379" required='true'>
+        <br><br><br>
+        <label for="Email Address">Email Address: </label>
+        <input type="text" id="Email Address" name="email" placeholder="eg: abcd@iit.lk" required='true'>                                   
+        <br><br><br>
+        <label for="country">Country: </label>
+        <select id="country" name="country">
+        <option value="srilanka">Sri Lanka</option> 
+        <option value="uk">UK</option>
+        <option value="australia">Australia</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="new zeland">New Zeland</option>
+        <option value="dubai">Dubai</option>
+        <option value="singapore">Singapore</option>    
+        </select>
+        <br><br><br>                                                
+        <p align="center"><input type="button" class="btn" value="Confirm" onclick= "validation()">
+            
+        </form>
+
+        <script> 
+            
+            function validation(){    
+                var x = document.forms["f1"]["fname"].value;     
+                var y = document.forms["f1"]["email"].value;   
+                var z = document.forms["f1"]["lname"].value;       
+                var empty=false;        
+                if (x === "") {
+                alert(" First Name is Empty");
+                    empty=true;     
+                }        
+                if (y=== "") {
+                    alert(" Last name is Empty");
+                    empty=true;  
+                }        
+                if (z=== "") {
+                    alert("Email is Empty");
+                    empty=true;  
+                }                        
+                 if(empty==false){
+                window.open('buyProducts.html');
+                }
+      
+            }       
+        </script>
+
+<style>
+    
+h2 {
+    color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-shadow: 0 2px white, 0 3px #777;
+    }
+    
+form {
+    background: #D3D3D3;
+    margin: auto;
+    position: relative;
+    width: 750px;
+    height: 750px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 30px;
+    color: #2F4F4F;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #999;
+    border: inset 1px solid #333;
+    }
+    
+</style>
+        
+        <footer>
+
+    <hr color="black">
+    <hr color="black">
+    <br>
+
+    <!--cpoyrights and link to CV-->
+    <p id="links">
+    <center> © <a href="../CV/vimmacv.html" target="_blank">Vimukthi© </a><br>All Rights Reserved | TEAM eXpireD</center>
+    </p>
+
+</footer>
+    
+</body>
+</html>

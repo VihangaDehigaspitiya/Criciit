@@ -1,0 +1,222 @@
+ul {
+  
+    list-style-type: none;
+    width:750px;
+    margin:auto;
+    padding: 0;
+    overflow: hidden;
+    margin-top: auto;
+  
+    position:relative;
+}
+.logo{
+    right: 20px;
+}
+.nav{
+    display: flex;
+    align-items: ;
+    background:transparent;
+    width: 100%;
+     position: absolute;
+     top: 0;
+}
+li {
+    align-content: center;
+    float: left;
+    opacity: 0.8;
+  
+}
+.overlay {
+  position: absolute;
+  bottom:auto;
+  left: 0;
+  right: 0;
+  background-color:white;
+;
+  overflow: hidden;
+  width: 0;
+  height: 580px;
+  transition: .5s ease;
+    opacity:0.7;
+}
+
+.logo:hover .overlay {
+  width: 20%;
+}
+
+body{   
+        background: #8E0E00;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                       
+   
+        background-position: center center;  
+        overflow: scroll;
+}
+li a, .dropbtn {
+    align-content: center;
+    display: inline-block;
+    color: white;
+    font-weight:600;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    width:100px;
+    font-size: 12px;
+    position: relative;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    border-bottom: 1px solid;
+ border-top: 1px solid;
+ margin-top: 2em;
+    
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #1565C0;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active{
+    background-color:#283593;
+}
+.border{
+
+ position:relative;
+ width:100%;
+ height:100px;
+ background-color:#4242420
+; 
+ opacity: 0.5;
+}
+
+.border:hover{
+    opacity: 1.0;
+}
+
+.Content{
+    background-color:white;
+    margin: auto;
+    opacity:0.8;
+}
+
+
+.content{
+    color:black;
+    align-content: center;
+     font-weight: bold;
+     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 16px;
+    width:70%;
+}
+
+.image-wrapper {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+.image-wrapper .image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color:white;
+  color: #fff;
+  display: none;
+    opacity:0.7;
+}
+
+.image-wrapper:hover .image-overlay {
+   display: block;
+}
+
+.image-wrapper .image-overlay .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 20px;
+  width: 150px;
+  margin-top: -10px;
+  margin-left: -75px;
+}
+
+.CV{
+    background-color: whitesmoke;
+}
+
+.heading{
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+
+.nav{
+    display: flex;
+    background:transparent;
+    width: 100%;
+     
+     top: 0;
+}
+
+.nav li {
+    align-content: center;
+    float: left;
+  
+}
+.nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: #1565C0;
+}
+
+.nav li.dropdown {
+    display: inline-block;
+}
+.nav li a, .dropbtn {
+    align-content: center;
+    display: inline-block;
+    color: white;
+    font-weight:600;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    width:100px;
+    font-size: 12px;
+    position: relative;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    border-bottom: 1px solid;
+ border-top: 1px solid;
+ margin-top: 2em;
+    
+}
